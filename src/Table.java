@@ -17,7 +17,7 @@ public class Table <K, E>{
 	}
 	
 	//keys are objects so hash the keys by first computing their hash code and the convert the hash code to valid array index
-	private int hash(Object key) //DONE!!!
+	private int hash(Object key)
 	{
 		return Math.abs(key.hashCode()) % data.length;
 	}
